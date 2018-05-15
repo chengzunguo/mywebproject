@@ -1,0 +1,7 @@
+cd ¹¤³ÌÄ¿Â¼
+
+python manage.py runserver
+
+
+me
+guochengzun123400

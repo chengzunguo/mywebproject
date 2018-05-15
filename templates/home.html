@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            
+            GZpython1802-郭承尊
+        </title>
+        <style type="text/css">
+            #page{
+                overflow: hidden;
+            }
+
+            #inputbox{
+                /*background-color: #58bc58;*/
+                width: 200px;
+                height: 400px;
+                float: left;
+
+            }
+            #outputbox{
+                /*background-color: #58bc58;*/
+                width: 200px;
+                height: 400px;
+                float: left;
+                overflow:auto;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+    <div id="page">
+        <h1>{{info}}</h1>
+        <h2>{{request.user}}</h2>
+
+        <div id="inputbox">
+            <form action="#">
+                <textarea name="text1" id="text1" cols="20" rows="20">input</textarea> 
+                <br>
+                <input type="submit" value="input" />
+            </form>
+        </div>
+
+        <div id="outputbox">
+            
+            <ul>
+                <li>{% for modeltext in modeltext.all %}
+
+                    {{modeltext.text}}
+
+                {% endfor%}</li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>
